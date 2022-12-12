@@ -1,0 +1,23 @@
+.site-logo {
+  display: flex;
+  align-items: center;
+}
+
+.site-logo__link {
+  display: block;
+  font-size: 0;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.site-logo__color-blu {
+  color: $accent-color;
+}
+.site-logo__color-black {
+  color: $logo-color-black;
+}

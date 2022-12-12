@@ -1,0 +1,164 @@
+.hero-form {
+  width: 448px;
+}
+
+.hero-form__title {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+
+  margin-bottom: 12px;
+
+  color: $prymery-text-color;
+}
+
+.hero-form__field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.hero-form__label {
+   display: flex;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+
+  color: $secondary-text-color;
+}
+
+.hero-form__input {
+  margin: 0;
+  padding: 12px 16px 12px 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+}
+
+.hero-form__icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  left: 12px;
+  caret-color: inherit;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-form__input {
+  padding-right: 42px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    outline: transparent;
+    & + .hero-form__icon {
+      fill: $accent-color;
+    }
+  }
+}
+
+.hero-form__coment {
+  resize: none;
+
+  width: 448px;
+  height: 120px;
+  padding: 12px 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    outline: transparent;
+  }
+}
+
+.hero-form__check--box {
+
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+
+  color: $secondary-text-color;
+  margin-bottom: 30px;
+}
+
+.hero-form__checkbox-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  bottom: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.hero-form__checkbox-input:checked + .hero-form__lable .hero-form__icon-box {
+    fill: $accent-color;
+  border-color: transparent;
+  background: $accent-color;
+}
+
+.hero-form__icon-box{
+   margin-right: 9px;
+}
+
+.hero-form__lable{
+   display: flex;
+   align-items: center;
+}
+
+.hero-form__icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid $prymery-text-color;
+  border-radius: 4px;
+  height: 15px;
+  width: 16px;
+}
+
+.hero-form__policy {
+   margin-left: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: $accent-color;
+}
+
+.hero-form__send {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  border: none;
+
+  padding: 10px 52px;
+
+  color: $pramery-white-color;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  cursor: pointer;
+}

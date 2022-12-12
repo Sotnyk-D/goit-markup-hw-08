@@ -1,0 +1,7 @@
+
+# .v4p backup files
+*~.xml
+.vscode
+.DS_Store
+# Dynamic plugins .dll
+bin/

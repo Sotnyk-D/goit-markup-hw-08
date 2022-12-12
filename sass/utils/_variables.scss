@@ -1,0 +1,45 @@
+// peremennye
+
+$logo-color-black: #000000;
+$secondary-text-color: #757575;
+$prymery-text-color: #212121;
+$accent-color: #2196f3;
+$pramery-white-color: #ffffff;
+$pramery-footer-text-color: rgba(255, 255, 255, 0.6);
+$backgroundcolor-hero: #2f303a;
+$pramery-footer-color: #2f303a;
+$secondary-backgraund-color: #f5f4fa;
+$primery-fill-color: #afb1b8;
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+

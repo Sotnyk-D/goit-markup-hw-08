@@ -1,0 +1,51 @@
+.contakt-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.cont-list {
+  display: flex;
+}
+
+.contakt-nav__item + .contakt-nav__item {
+  margin-left: 50px;
+}
+
+.contakt-nav__mail,
+.contakt-nav__tel {
+  fill: $secondary-text-color;
+  color: $secondary-text-color;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}
+
+
+.contakt-nav__icon--mail {
+  display: flex;
+  align-items: center;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.contakt-nav__icon--tel {
+  display: flex;
+  align-items: center;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
