@@ -15,7 +15,6 @@
   display: block;
   margin-bottom: 30px;
   @media screen and (min-width: $tablet) {
-    display: inline-block;
     margin-right: 0px;
   }
 
@@ -40,10 +39,17 @@
 }
 
 .portfolio-card__img {
-  display: block;
   &:hover .portfolio-card__overlay,
   &:focus .portfolio-card__overlay {
     transform: translateY(0);
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  @media screen and (min-width: $desctop) {
+    display: block;
   }
 }
 
@@ -76,6 +82,12 @@
 .portfolio-card__text--title {
   border: 1px solid #eeeeee;
   border-top: none;
+  @media screen and (min-width: $tablet) {
+    flex-grow: 1;
+  }
+  @media screen and (min-width: $desctop) {
+    flex-grow: 0;
+  }
 }
 
 .portfolio-card__card--title {
