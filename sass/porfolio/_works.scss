@@ -1,7 +1,6 @@
 .works {
-  @media screen and (min-width: $mobile) {
-    display: none;
-  }
+  display: none;
+
   @media screen and (min-width: $desctop) {
     display: inherit;
   }
