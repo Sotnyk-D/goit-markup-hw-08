@@ -24,6 +24,68 @@
           <span class="site-logo__color-blu">Web</span>
           <span class="site-logo__color-black">Studio</span>
         </a>
+        <button
+          class="mobile__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile__container"
+          tupe="button"
+          js-open-menu
+        >
+          <svg width="40" height="40" aria-label="Кнопка мобільного меню">
+            <use
+              class="mobile__icon-crose"
+              href="./imeges/symbol-defs.svg#icon-menu_mob2"
+            ></use>
+          </svg>
+        </button>
+        <div class="mobile__container js-menu-container">
+          <div class="mobile__list">
+            <button class="mobile__close js-close-menu" type="button">
+              <svg width="40" height="40">
+                <use
+                  class="mobile__icon-menu"
+                  href="./imeges/symbol-defs.svg#icon-close_mob2"
+                ></use>
+              </svg>
+            </button>
+            <ul class="list">
+              <li class="mobile__item">
+                <a class="mobile__link mobile__current" href="">Студія</a>
+              </li>
+              <li class="mobile__item">
+                <a class="mobile__link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="mobile__item">
+                <a class="mobile__link" href="">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Contakt -->
+          <div class="mobail-nav-list">
+            <ul class="list">
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__tel" href="tel:+380961111111">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__mail" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-social">
+            <ul class="mobile-social__list list">
+              <li class="mobile-social__link line">
+                <a href="#"></a>Instagram
+              </li>
+              <li class="mobile-social__link line"><a href="#"></a>Twitter</li>
+              <li class="mobile-social__link line"><a href="#"></a>Facebook</li>
+              <li class="mobile-social__link line"><a href="#"></a>LinkedIn</li>
+            </ul>
+          </div>
+        </div>
         <ul class="site-nav list">
           <li class="site-nav__item">
             <a href="./index.html" class="site-nav__link">Студія</a>
@@ -288,10 +350,10 @@
     <footer class="footer">
       <div class="container footer-container">
         <div class="contackt-wrap">
-          <a class="footer__logo" href="#"
-            ><span class="footer__blu"">Web</span
-            ><span class="footer__white">Studio</span></a
-          >
+          <a class="footer__logo" href="#">
+            <span class="footer__blu">Web</span>
+            <span class="footer__white">Studio</span>
+          </a>
           <address class="footer__address">
             <ul class="list">
               <li>
@@ -300,12 +362,12 @@
                 >
               </li>
               <li>
-                <a class="footer__mail list" href="mailto:info@devstudio.com" 
+                <a class="footer__mail list" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li>
-                <a class="footer__tel list" href="tel:+380961111111" 
+                <a class="footer__tel list" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -352,7 +414,7 @@
           <div class="subscribe__batton">
             <label for="email" class=""> </label>
             <input
-            class="subscribe__input"
+              class="subscribe__input"
               type="email"
               name="email"
               id="email"
@@ -368,5 +430,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
