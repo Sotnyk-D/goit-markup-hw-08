@@ -24,6 +24,62 @@
           <span class="site-logo__color-blu">Web</span>
           <span class="site-logo__color-black">Studio</span>
         </a>
+        <button
+          class="mobile__button"
+          aria-expanded="false"
+          aria-controls="mobile__container"
+          tupe="button"
+          data-menu-button
+        >
+          <svg width="40px" height="40px" aria-label="Кнопка мобільного меню">
+            <use
+              class="mobile__icon-crose"
+              href="./imeges/symbol-defs.svg#icon-close_mob2"
+            ></use>
+            <use
+              class="mobile__icon-menu"
+              href="./imeges/symbol-defs.svg#icon-menu_mob2"
+            ></use>
+          </svg>
+        </button>
+        <div class="mobile__container" id="mobile__container" data-menu>
+          <div class="mobile__list">
+            <ul class="list">
+              <li class="mobile__item">
+                <a class="mobile__link mobile__current" href="">Студія</a>
+              </li>
+              <li class="mobile__item">
+                <a class="mobile__link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="mobile__item">
+                <a class="mobile__link" href="">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Contakt -->
+          <div class="mobail-nav-list">
+            <ul class="list">
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__tel" href="tel:+380961111111">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__mail" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-social">
+            <ul class="mobile-social__list list">
+               <li class="mobile-social__link line"><a href="#"></a>Instagram</li>
+               <li class="mobile-social__link line"><a href="#"></a>Twitter</li>
+               <li class="mobile-social__link line"><a href="#"></a>Facebook</li>
+               <li class="mobile-social__link line"><a href="#"></a>LinkedIn</li>
+            </ul>
+          </div>
+        </div>
         <ul class="site-nav list">
           <li class="site-nav__item">
             <a class="site-nav__link site-nav__current" href="">Студія</a>
@@ -126,11 +182,10 @@
                 />
                 <label class="hero-form__lable" for="policy">
                   <span class="hero-form__icon-box">
-                    <svg class="hero-form__icon-chekc" width="11" height="8" >
+                    <svg class="hero-form__icon-chekc" width="11" height="8">
                       <use
-                        href="./imeges/symbol-defs.svg#icon-check2" 
-                      ></use>
-                    </svg></span
+                        href="./imeges/symbol-defs.svg#icon-check2"
+                      ></use></svg></span
                   >Погоджуюся з розсилкою та приймаю
                 </label>
                 <a class="hero-form__policy" href="#">Умови договору</a>
@@ -149,9 +204,9 @@
         <h2 hidden>Приклади робіт</h2>
         <div class="container feature">
           <ul class="feature__list list">
-            <li class="feature__item icon-item">
+            <li class="feature__item">
               <div class="feature__fonts">
-                <svg>
+                <svg class="feature__svg" width="70px" height="70px">
                   <use href="./imeges/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -165,7 +220,7 @@
             </li>
             <li class="feature__item">
               <div class="feature__fonts">
-                <svg>
+                <svg width="70px" height="70px">
                   <use href="./imeges/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -179,7 +234,7 @@
             </li>
             <li class="feature__item">
               <div class="feature__fonts">
-                <svg>
+                <svg width="70px" height="70px">
                   <use href="./imeges/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -193,7 +248,7 @@
             </li>
             <li class="feature__item">
               <div class="feature__fonts">
-                <svg>
+                <svg width="70px" height="70px">
                   <use href="./imeges/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -208,6 +263,7 @@
           </ul>
         </div>
       </section>
+      <!-- Works -->
       <section class="works section">
         <div class="container">
           <h2 class="work__title">Чим ми займаємося</h2>
@@ -597,6 +653,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

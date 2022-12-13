@@ -13,11 +13,51 @@
 }
 
 .team__list {
-  display: flex;
+  @media screen and (min-width: $mobile) {
+    display: block;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: $desctop) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  //   display: flex;
 }
 
+.team__item {
+  @media screen and (min-width: $mobile) {
+    width: 100%;
+
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+  }
+  @media screen and (min-width: $desctop) {
+    width: 270px;
+  }
+}
+
+.team__item + .team__item:nth-child(2n) {
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
+}
 .team__item + .team__item {
-  margin-left: 30px;
+  @media screen and (min-width: $mobile) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-left: 30px;
+    margin-bottom: 0px;
+  }
 }
 
 .team__backgrcolor {
@@ -77,6 +117,15 @@
   &:focus {
     background-color: $accent-color;
     fill: $pramery-white-color;
+  }
+  @media screen and (min-width: $mobile) {
+    display: block;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+  @media screen and (min-width: $desctop) {
+    display: flex;
   }
 }
 

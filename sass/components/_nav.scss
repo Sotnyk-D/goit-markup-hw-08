@@ -1,5 +1,18 @@
+.header {
+  position: relative;
+}
+
 .site-nav {
-  display: flex;
+
+  @media screen and (min-width: $mobile) {
+    display: none;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+  @media screen and (min-width:$desctop) {
+      display: flex;
+   }
 }
 
 .site-nav__item {

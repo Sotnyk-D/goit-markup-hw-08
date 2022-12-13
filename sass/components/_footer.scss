@@ -1,6 +1,19 @@
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: $mobile) {
+    display: block;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  @media screen and (min-width: $desctop) {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
 }
 
 .footer {
@@ -11,15 +24,33 @@
   padding-bottom: 60px;
 }
 .footer__logo {
-  display: flex;
-  margin-bottom: 20px;
   font-size: 0;
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+
+  @media screen and (min-width: $mobile) {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: $desctop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
 }
+
 .footer__blu {
   color: $accent-color;
 }
@@ -30,6 +61,24 @@
 .footer__address {
   display: flex;
   flex-direction: column;
+  width: 231px;
+  text-align: initial;
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    text-align: center;
+    width: 231px;
+  }
+  @media screen and (min-width: $desctop) {
+    display: flex;
+    text-align: center;
+    width: 231px;
+  }
 }
 
 .footer__address--name {

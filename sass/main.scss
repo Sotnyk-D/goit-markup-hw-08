@@ -1,8 +1,10 @@
 @import "./base/normalize.scss";
 @import "./utils/variables.scss";
+@import "./utils/breckpoints";
 @import "./layout/page-header.scss";
 @import "./components/logo";
 @import "./components/nav";
+@import "./layout/mobile-container";
 @import "./components/hedercontacts";
 @import "./layout/hero";
 @import "./components/hero-modal";
