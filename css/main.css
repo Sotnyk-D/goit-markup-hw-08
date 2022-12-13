@@ -475,6 +475,13 @@ p {
   position: absolute;
   top: 0;
   right: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile__close:hover {
+  fill: #2196f3;
 }
 
 @media screen and (min-width: 480px) {
@@ -485,6 +492,7 @@ p {
 @media screen and (min-width: 768px) {
   .contakt-nav {
     display: block;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -530,10 +538,11 @@ p {
   .contakt-nav__mail,
 .contakt-nav__tel {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding-top: 0px;
     padding-bottom: 0px;
     margin: 0;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -564,29 +573,50 @@ p {
 
 .hero {
   max-width: 1600px;
-  height: 600px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/background.jpg);
+  max-height: 400px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/header-mobile.jpg);
   background-color: #2f303a;
   width: 100%;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/header-tablet.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/background.jpg);
+  }
 }
 
 .hero__title {
   margin-bottom: 30px;
   color: #ffffff;
-  width: 696px;
   margin-left: auto;
   margin-right: auto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.6153846154;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {
@@ -673,37 +703,20 @@ p {
   padding: 0;
 }
 
-.hero-form {
-  width: 448px;
-}
-
 .hero-form__title {
-  display: inline-block;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
+  width: 370px;
+  display: block;
   text-align: center;
   margin-bottom: 12px;
   color: #212121;
 }
-@media screen and (min-width: 480px) {
-  .hero-form__title {
-    width: 370px;
-    display: block;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero-form__title {
-    width: 370px;
-    display: block;
-    text-align: center;
-  }
-}
 @media screen and (min-width: 1200px) {
   .hero-form__title {
-    width: 100%;
-    display: block;
+    width: 576px;
+    display: contents;
     text-align: center;
   }
 }
@@ -954,7 +967,7 @@ p {
     width: 354px;
     height: 120px;
     padding: 25px 100px;
-    text-align: center;
+    justify-content: center;
     align-items: center;
   }
 }
@@ -1184,6 +1197,10 @@ p {
   display: flex;
   width: 20px;
   height: 20px;
+}
+
+.team__pic {
+  max-width: 100%;
 }
 
 .clients__title {

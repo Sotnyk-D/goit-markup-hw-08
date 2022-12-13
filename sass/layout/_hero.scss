@@ -1,35 +1,62 @@
 .hero {
   max-width: 1600px;
-  height: 600px;
+
+  max-height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../imeges/background.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
+    url(../imeges/header-mobile.jpg);
   background-color: $backgroundcolor-hero;
   width: 100%;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../imeges/header-tablet.jpg);
+  }
+  @media screen and (min-width: $desctop) {
+    height: 600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../imeges/background.jpg);
+
+  }
 }
 
 .hero__title {
   margin-bottom: 30px;
   color: $pramery-white-color;
-  width: 696px;
+
   margin-left: auto;
   margin-right: auto;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: calc(42 / 26);
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    width: 360px;
+  }
+  @media screen and (min-width: $desctop) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {

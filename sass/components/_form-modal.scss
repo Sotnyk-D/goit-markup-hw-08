@@ -1,31 +1,24 @@
-.hero-form {
-  width: 448px;
-}
+// .hero-form {
+//   width: 450px;
+
+// }
 
 .hero-form__title {
-  display: inline-block;
   font-weight: 700;
   font-size: 20px;
   line-height: calc(23 / 20);
+  width: 370px;
+  display: block;
   text-align: center;
-
   margin-bottom: 12px;
 
   color: $prymery-text-color;
 
-  @media screen and (min-width: $mobile) {
-    width: 370px;
-    display: block;
-    text-align: center;
+  @media screen and (min-width: $tablet) {
   }
-   @media screen and (min-width: $tablet) {
-    width: 370px;
-    display: block;
-    text-align: center;
-  }
-   @media screen and (min-width: $desctop) {
-    width: 100%;
-    display: block;
+  @media screen and (min-width: $desctop) {
+    width: 576px;
+    display: contents;
     text-align: center;
   }
 }
