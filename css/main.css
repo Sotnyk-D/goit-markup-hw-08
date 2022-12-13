@@ -372,15 +372,6 @@ p {
   border: none;
   background-color: transparent;
 }
-.mobile__button .mobile__icon-crose {
-  display: none;
-}
-.mobile__button.is-open .mobile__icon-crose {
-  display: block;
-}
-.mobile__button.is-open .mobile__icon-menu {
-  display: none;
-}
 @media screen and (min-width: 480px) {
   .mobile__button {
     display: block;
@@ -395,16 +386,16 @@ p {
 
 .mobile__container {
   display: none;
-  position: absolute;
-  width: 480px;
-  height: 796px;
-  top: 100%;
-  left: 0;
+  position: fixed;
+  height: 100%;
   width: 100%;
+  top: 0;
+  left: 0;
   background-color: #ffffff;
   padding: 20px;
   text-align: center;
   font-size: 20px;
+  overflow: auto;
 }
 .mobile__container.is-open {
   display: block;
@@ -480,6 +471,12 @@ p {
   cursor: pointer;
 }
 
+.mobile__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 @media screen and (min-width: 480px) {
   .contakt-nav {
     display: none;
@@ -497,8 +494,15 @@ p {
   }
 }
 
-.contakt-nav__item + .contakt-nav__item {
-  margin-left: 50px;
+@media screen and (min-width: 768px) {
+  .contakt-nav__item + .contakt-nav__item {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contakt-nav__item + .contakt-nav__item {
+    margin-left: 50px;
+  }
 }
 
 .contakt-nav__mail,
@@ -506,7 +510,7 @@ p {
   fill: #757575;
   color: #757575;
   text-decoration: none;
-  display: flex;
+  display: none;
   text-align: center;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -521,6 +525,25 @@ p {
 .contakt-nav__tel:focus {
   color: #2196f3;
   fill: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .contakt-nav__mail,
+.contakt-nav__tel {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contakt-nav__mail,
+.contakt-nav__tel {
+    display: flex;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contakt-nav__icon--mail {

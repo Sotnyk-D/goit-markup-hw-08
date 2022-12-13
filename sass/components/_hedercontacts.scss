@@ -30,7 +30,12 @@
 // }
 
 .contakt-nav__item + .contakt-nav__item {
-  margin-left: 50px;
+  @media screen and (min-width: $tablet) {
+    margin: 0;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-left: 50px;
+  }
 }
 
 .contakt-nav__mail,
@@ -38,7 +43,7 @@
   fill: $secondary-text-color;
   color: $secondary-text-color;
   text-decoration: none;
-  display: flex;
+  display: none;
   text-align: center;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -52,24 +57,21 @@
   &:focus {
     color: $accent-color;
     fill: $accent-color;
-    }
-  
-//   @media screen and (min-width: $mobile) {
-//     display: none;
-//   }
-//   @media screen and (min-width: $tablet) {
-//     display: flex;
-//     flex-direction: column;
-//     padding-top: 0px;
-//     padding-bottom: 0px;
-//   }
-//   @media screen and (min-width: $tablet) {
-//     display: flex;
-//     text-align: center;
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-//   }
+  }
 
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0;
+  }
+  @media screen and (min-width: $desctop) {
+    display: flex;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contakt-nav__icon--mail {
@@ -78,12 +80,12 @@
   width: 16px;
   height: 12px;
   margin-right: 10px;
-//   @media screen and (min-width: $tablet) {
-//     display: flex;
-//     flex-direction: column;
-//     padding-top: 0px;
-//     padding-bottom: 0px;
-//   }
+  //   @media screen and (min-width: $tablet) {
+  //     display: flex;
+  //     flex-direction: column;
+  //     padding-top: 0px;
+  //     padding-bottom: 0px;
+  //   }
 }
 
 .contakt-nav__icon--tel {
@@ -92,10 +94,10 @@
   width: 10px;
   height: 16px;
   margin-right: 10px;
-//   @media screen and (min-width: $tablet) {
-//     display: flex;
-//     flex-direction: column;
-//     padding-top: 0px;
-//     padding-bottom: 0px;
-//   }
+  //   @media screen and (min-width: $tablet) {
+  //     display: flex;
+  //     flex-direction: column;
+  //     padding-top: 0px;
+  //     padding-bottom: 0px;
+  //   }
 }

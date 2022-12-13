@@ -25,25 +25,29 @@
           <span class="site-logo__color-black">Studio</span>
         </a>
         <button
-          class="mobile__button"
+          class="mobile__button js-open-menu"
           aria-expanded="false"
           aria-controls="mobile__container"
           tupe="button"
-          data-menu-button
+          js-open-menu
         >
-          <svg width="40px" height="40px" aria-label="Кнопка мобільного меню">
+          <svg width="40" height="40" aria-label="Кнопка мобільного меню">
             <use
               class="mobile__icon-crose"
-              href="./imeges/symbol-defs.svg#icon-close_mob2"
-            ></use>
-            <use
-              class="mobile__icon-menu"
               href="./imeges/symbol-defs.svg#icon-menu_mob2"
             ></use>
           </svg>
         </button>
-        <div class="mobile__container" id="mobile__container" data-menu>
+        <div class="mobile__container js-menu-container">
           <div class="mobile__list">
+            <button class="mobile__close js-close-menu" type="button">
+              <svg width="40" height="40">
+                <use
+                  class="mobile__icon-menu"
+                  href="./imeges/symbol-defs.svg#icon-close_mob2"
+                ></use>
+              </svg>
+            </button>
             <ul class="list">
               <li class="mobile__item">
                 <a class="mobile__link mobile__current" href="">Студія</a>
@@ -73,10 +77,12 @@
           </div>
           <div class="mobile-social">
             <ul class="mobile-social__list list">
-               <li class="mobile-social__link line"><a href="#"></a>Instagram</li>
-               <li class="mobile-social__link line"><a href="#"></a>Twitter</li>
-               <li class="mobile-social__link line"><a href="#"></a>Facebook</li>
-               <li class="mobile-social__link line"><a href="#"></a>LinkedIn</li>
+              <li class="mobile-social__link line">
+                <a href="#"></a>Instagram
+              </li>
+              <li class="mobile-social__link line"><a href="#"></a>Twitter</li>
+              <li class="mobile-social__link line"><a href="#"></a>Facebook</li>
+              <li class="mobile-social__link line"><a href="#"></a>LinkedIn</li>
             </ul>
           </div>
         </div>
