@@ -1,10 +1,8 @@
 .footer__wrap {
-  @media screen and (min-width: $mobile) {
-    display: block;
-    text-align: center;
-    margin-left: 0px;
-    margin-bottom: 60px;
-  }
+  display: block;
+  text-align: center;
+  margin-left: 0px;
+  margin-bottom: 60px;
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-direction: column;
@@ -26,12 +24,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $pramery-white-color;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
 
-  @media screen and (min-width: $mobile) {
-    display: block;
-    text-align: center;
-    margin-bottom: 20px;
-  }
   @media screen and (min-width: $desctop) {
     display: flex;
     text-align: center;
@@ -41,7 +37,6 @@
     display: flex;
     text-align: center;
     margin-bottom: 20px;
-    
   }
 }
 
