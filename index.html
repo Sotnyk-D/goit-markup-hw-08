@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
-  <body>
+  <body data-hidden>
     <header class="header">
       <!-- site nav -->
       <nav class="site-logo container">
@@ -326,11 +326,17 @@
                     media="(min-width: 1200px)"
                   />
                   <source
-                    srcset="./imeges/igor-tablet.jpg 1x, ./imeges/igor-tablet2x.jpg 2x"
+                    srcset="
+                      ./imeges/igor-tablet.jpg   1x,
+                      ./imeges/igor-tablet2x.jpg 2x
+                    "
                     media="(min-width: 768px)"
                   />
                   <source
-                    srcset="./imeges/igor-mobile.jpg 1x, ./imeges/igor-mobile2x.jpg 2x"
+                    srcset="
+                      ./imeges/igor-mobile.jpg   1x,
+                      ./imeges/igor-mobile2x.jpg 2x
+                    "
                     media="(max-width: 767px)"
                   />
                   <img
@@ -393,11 +399,17 @@
                     media="(min-width: 1200px)"
                   />
                   <source
-                    srcset="./imeges/olga-tablet.jpg 1x, ./imeges/olga-tablet2x.jpg 2x"
+                    srcset="
+                      ./imeges/olga-tablet.jpg   1x,
+                      ./imeges/olga-tablet2x.jpg 2x
+                    "
                     media="(min-width: 768px)"
                   />
                   <source
-                    srcset="./imeges/olga-mobile.jpg 1x, ./imeges/olga-mobile2x.jpg 2x"
+                    srcset="
+                      ./imeges/olga-mobile.jpg   1x,
+                      ./imeges/olga-mobile2x.jpg 2x
+                    "
                     media="(max-width: 767px)"
                   />
                   <img
@@ -461,11 +473,17 @@
                     media="(min-width: 1200px)"
                   />
                   <source
-                    srcset="./imeges/mykola-tablet.jpg 1x, ./imeges/mykola-tablet2x.jpg 2x"
+                    srcset="
+                      ./imeges/mykola-tablet.jpg   1x,
+                      ./imeges/mykola-tablet2x.jpg 2x
+                    "
                     media="(min-width: 768px)"
                   />
                   <source
-                    srcset="./imeges/mykola-mobile.jpg 1x, ./imeges/mykola-mobile2x.jpg 2x"
+                    srcset="
+                      ./imeges/mykola-mobile.jpg   1x,
+                      ./imeges/mykola-mobile2x.jpg 2x
+                    "
                     media="(max-width: 767px)"
                   />
                   <img
@@ -520,28 +538,37 @@
             </li>
             <li class="team__item">
               <div class="team__backgrcolor">
-               <div class="team__pic">
-                <picture>
-                  <source
-                    srcset="./imeges/myhaylo1x.jpg 1x, ./imeges/myhaylo2x.jpg 2x"
-                    media="(min-width: 1200px)"
-                  />
-                  <source
-                    srcset="./imeges/myhaylo-tablet.jpg 1x, ./imeges/myhaylo-tablet2x.jpg 2x"
-                    media="(min-width: 768px)"
-                  />
-                  <source
-                    srcset="./imeges/myhaylo-mobile.jpg 1x, ./imeges/myhaylo-mobile2x.jpg 2x"
-                    media="(max-width: 767px)"
-                  />
-                  <img
-                    class="team__photo"
-                    src="./imeges/myhaylo1x.jpg"
-                    alt="Михайло Єрмаков"
-                    max-width="450"
-                    max-height="460"
-                  />
-                </picture>
+                <div class="team__pic">
+                  <picture>
+                    <source
+                      srcset="
+                        ./imeges/myhaylo1x.jpg 1x,
+                        ./imeges/myhaylo2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./imeges/myhaylo-tablet.jpg   1x,
+                        ./imeges/myhaylo-tablet2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./imeges/myhaylo-mobile.jpg   1x,
+                        ./imeges/myhaylo-mobile2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="team__photo"
+                      src="./imeges/myhaylo1x.jpg"
+                      alt="Михайло Єрмаков"
+                      max-width="450"
+                      max-height="460"
+                    />
+                  </picture>
                 </div>
                 <div class="team__descript">
                   <h3 class="team__name">Михайло Єрмаков</h3>
@@ -721,6 +748,12 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>

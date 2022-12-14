@@ -1,10 +1,18 @@
 .footer-container {
-  display: block;
-  text-align: center;
+//   display: block;
+//   text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   //  justify-content: space-around;
+    text-align: center;
+    align-items: center;
 
   @media screen and (min-width: $tablet) {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+   //  justify-content: space-around;
+    text-align: center;
     align-items: baseline;
   }
   @media screen and (min-width: $desctop) {

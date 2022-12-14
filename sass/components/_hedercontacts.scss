@@ -41,6 +41,9 @@
 
 .contakt-nav__mail,
 .contakt-nav__tel {
+
+   display: flex;
+   flex-wrap: wrap;
   fill: $secondary-text-color;
   color: $secondary-text-color;
   text-decoration: none;
@@ -49,6 +52,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;

@@ -1,7 +1,6 @@
 .hero {
   max-width: 1600px;
-
-  max-height: 400px;
+  height: 400px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,6 +23,9 @@
       url(../imeges/header-tablet.jpg);
   }
   @media screen and (min-width: $desctop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: auto;
     height: 600px;
     background-image: linear-gradient(
         to right,
@@ -32,6 +34,9 @@
       ),
       url(../imeges/background.jpg);
   }
+}
+.hero__section {
+  padding: 200px 402px;
 }
 
 .hero__title {
@@ -56,7 +61,6 @@
     width: 696px;
     font-size: 44px;
     line-height: 1.36;
-    
   }
 }
 

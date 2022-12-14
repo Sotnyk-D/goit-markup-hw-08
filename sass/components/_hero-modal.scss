@@ -1,4 +1,6 @@
 .modal-hero {
+  overflow: auto;
+
   padding: 40px;
   background-color: $pramery-white-color;
   border-radius: 4px;
@@ -45,4 +47,10 @@
 }
 .modal-hero__icon {
   padding: 0;
+}
+
+body {
+  &.overflow {
+    overflow: hidden;
+  }
 }

@@ -10,12 +10,9 @@
 }
 
 .clients__icon--list {
-  @media screen and (min-width: $mobile) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -29,6 +26,8 @@
 }
 
 .clients__link {
+  width: 170px;
+  height: 92px;
   display: flex;
   justify-content: space-around;
   border: 1px solid #afb1b8;
@@ -42,8 +41,6 @@
     color: $accent-color;
   }
   @media screen and (min-width: $mobile) {
-    width: 210px;
-    height: 92px;
   }
 
   @media screen and (min-width: $tablet) {
