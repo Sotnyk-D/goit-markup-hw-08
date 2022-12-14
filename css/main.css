@@ -413,7 +413,6 @@ p {
 
 .mobile__list {
   display: block;
-  margin-bottom: 302px;
 }
 
 .mobile__link {
@@ -440,6 +439,7 @@ p {
 
 .mobail-nav-list {
   display: block;
+  margin-top: 302px;
   margin-bottom: 64px;
 }
 
@@ -451,6 +451,7 @@ p {
   display: flex;
   text-align: center;
   padding-bottom: 32px;
+  margin-top: auto;
   font-weight: 500;
   font-size: 30px;
   line-height: 1.1764705882;
@@ -975,15 +976,12 @@ body.overflow {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .feature__item {
-    margin-bottom: 30px;
-  }
+.feature__item {
+  gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .feature__item {
     width: 50%;
-    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1259,6 +1257,7 @@ body.overflow {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .clients__icon--list {
@@ -1276,9 +1275,10 @@ body.overflow {
 }
 
 .clients__link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   border: 1px solid #afb1b8;
   border-radius: 4px;

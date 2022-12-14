@@ -14,12 +14,11 @@
 }
 
 .feature__item {
-  @media screen and (min-width: $mobile) {
-    margin-bottom: 30px;
-  }
+   gap: 30px;
+ 
   @media screen and (min-width: $tablet) {
     width: 50%;
-    margin-bottom: 30px;
+   //  margin-bottom: 30px;
   }
    @media screen and (min-width: $desctop) {
     
